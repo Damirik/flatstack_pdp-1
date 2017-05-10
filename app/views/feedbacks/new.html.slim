@@ -1,19 +1,12 @@
 - title("Contact Us")
-- description("Contact the team")
-- keywords("Contact, Email, Touch, Getting in touch")
-- meta robots: "noindex"
 
 .row
   .columns
-    h2 Feedback
+    h2 Leave a feedback
 
 .row
   .medium-6.columns
     = simple_form_for(feedback, url: feedback_path) do |f|
-
-      legend
-        ' Have a question?
-        | You may find the answer in the #{link_to("FAQ", "#")}.
 
       .form-inputs
         = f.input :name
