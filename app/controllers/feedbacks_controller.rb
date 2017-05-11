@@ -12,5 +12,3 @@ class FeedbacksController < ApplicationController
     params.require(:feedback).permit(:email, :message, :name, :phone)
   end
 end
-
-
